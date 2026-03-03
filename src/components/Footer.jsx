@@ -1,6 +1,6 @@
 const FooterLogo = () => (
   <div className="footer-logo">
-    <img src="/images/logo-lumicentro.png" alt="Lumicentro" style={{ height: '80px', width: 'auto' }} />
+    <img src="/images/logo-blanco.png" alt="Lumicentro" style={{ height: '80px', width: 'auto' }} />
   </div>
 )
 

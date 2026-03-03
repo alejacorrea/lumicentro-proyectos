@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react'
 
 const slides = [
-  { src: '/images/hero/slide-1.png', alt: 'Proyecto hotelero 1' },
-  { src: '/images/hero/slide-2.png', alt: 'Proyecto hotelero 2' },
-  { src: '/images/hero/slide-3.png', alt: 'Proyecto hotelero 3' },
-  { src: '/images/hero/slide-4.png', alt: 'Proyecto hotelero 4' },
+  { src: '/images/hero/slide-1.jpeg', alt: 'Proyecto hotelero 1' },
+  { src: '/images/hero/slide-2.jpeg', alt: 'Proyecto hotelero 2' },
+  { src: '/images/hero/slide-3.jpeg', alt: 'Proyecto hotelero 3' },
+  { src: '/images/hero/slide-4.jpeg', alt: 'Proyecto hotelero 4' },
 ]
 
 const INTERVAL = 6000

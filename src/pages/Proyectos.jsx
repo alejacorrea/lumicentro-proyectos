@@ -8,43 +8,71 @@ const projects = [
     id: 1,
     name: "JW Marriott Panamá",
     desc: "Es un hotel de lujo cinco estrellas en Punta Pacífica, reconocido por su arquitectura icónica, vistas al océano Pacífico y experiencia de hospitalidad premium en Ciudad de Panamá.",
-    image: "/images/jw-marriott.jpg",
+    images: [
+      "/images/proyectos/jw-marriott-1.jpeg",
+      "/images/proyectos/jw-marriott-2.jpeg",
+      "/images/proyectos/jw-marriott-3.jpeg",
+    ],
   },
   {
     id: 2,
     name: "Hilton Panamá",
     desc: "El Hilton Panamá es un hotel de alta categoría en Avenida Balboa, reconocido por sus vistas al mar y su ubicación estratégica en Ciudad de Panamá.",
-    image: "/images/hilton.jpg",
+    images: [
+      "/images/proyectos/hilton-1.jpeg",
+      "/images/proyectos/hilton-2.jpeg",
+      "/images/proyectos/hilton-3.jpeg",
+    ],
   },
   {
     id: 3,
-    name: "Sortis Hotel, Spa & Casino",
+    name: "Sortis Panamá",
     desc: "El Sortis Hotel, Spa & Casino es un hotel urbano de lujo ubicado en Obarrio, Ciudad de Panamá. Reconocido por su diseño moderno, spa, casino y vibrante oferta gastronómica, es un referente de hospitalidad contemporánea en la capital.",
-    image: "/images/sortis.jpg",
+    images: [
+      "/images/proyectos/sortis-1.jpeg",
+      "/images/proyectos/sortis-2.jpeg",
+      "/images/proyectos/sortis-3.jpeg",
+    ],
   },
   {
     id: 4,
     name: "Yoo Panamá",
-    desc: "El YOO Panamá es un exclusivo complejo residencial en Avenida Balboa, reconocido por su diseño vanguardista y vistas al mar en Ciudad de Panamá.",
-    image: "/images/yoo.jpg",
+    desc: "El YOO Panama es un exclusivo complejo residencial en Avenida Balboa, reconocido por su diseño vanguardista y vistas al mar en Ciudad de Panamá.",
+    images: [
+      "/images/proyectos/yoo-1.jpeg",
+      "/images/proyectos/yoo-2.jpeg",
+      "/images/proyectos/yoo-3.jpeg",
+    ],
   },
   {
     id: 5,
     name: "Waldorf Astoria Panamá",
     desc: "El Waldorf Astoria Panamá es un hotel de lujo en el corazón de Ciudad de Panamá, reconocido por su elegancia, servicio exclusivo y hospitalidad de alto nivel.",
-    image: "/images/waldorf.jpg",
+    images: [
+      "/images/proyectos/waldorf-1.jpeg",
+      "/images/proyectos/waldorf-2.jpeg",
+      "/images/proyectos/waldorf-3.jpeg",
+    ],
   },
   {
     id: 6,
     name: "Hotel W Panamá",
-    desc: "El W Panamá es un hotel urbano de lujo en el distrito financiero de Ciudad de Panamá, reconocido por su diseño moderno y estilo vibrante.",
-    image: "/images/w-hotels.jpg",
+    desc: "El W Panama es un hotel urbano de lujo en el distrito financiero de Ciudad de Panamá, reconocido por su diseño moderno y estilo vibrante.",
+    images: [
+      "/images/proyectos/w-hotels-1.jpg",
+      "/images/proyectos/w-hotels-2.jpg",
+      "/images/proyectos/w-hotels-3.jpg",
+    ],
   },
   {
     id: 7,
-    name: "The Ritz-Carlton Panamá",
+    name: "The Ritz-Carlton",
     desc: "Es una reconocida marca internacional de hoteles y resorts de lujo, distinguida por su servicio exclusivo, elegancia y experiencias premium en destinos de alto nivel alrededor del mundo.",
-    image: "/images/ritz.jpg",
+    images: [
+      "/images/proyectos/ritz-1.jpg",
+      "/images/proyectos/ritz-2.jpg",
+      "/images/proyectos/ritz-3.jpg",
+    ],
   },
 ];
 
@@ -58,18 +86,22 @@ const clients = [
 ];
 
 const logos = [
-  { type: 'img', src: '/images/logos/jw-marriott.png', alt: 'JW Marriott' },
-  { type: 'img', src: '/images/logos/ritz-carlton.png', alt: 'Ritz-Carlton' },
-  { type: 'img', src: '/images/logos/hilton.png', alt: 'Hilton' },
-  { type: 'img', src: '/images/logos/sortis.png', alt: 'Sortis' },
-  { type: 'img', src: '/images/logos/westin.png', alt: 'Westin' },
-  { type: 'img', src: '/images/logos/w-hotels.png', alt: 'W Hotels' },
-  { type: 'img', src: '/images/logos/yoopanama.png', alt: 'Yoo Panamá' },
-  { type: 'img', src: '/images/logos/courtyard.png', alt: 'Courtyard' },
-  { type: 'img', src: '/images/logos/melia.png', alt: 'Melia' },
-  { type: 'img', src: '/images/logos/sheraton.png', alt: 'Sheraton' },
-  { type: 'img', src: '/images/logos/hyatt.png', alt: 'Hyatt' },
-  { type: 'img', src: '/images/logos/waldorf-astoria.png', alt: 'Waldorf Astoria' },
+  { type: "img", src: "/images/logos/jw-marriott.png", alt: "JW Marriott" },
+  { type: "img", src: "/images/logos/ritz-carlton.png", alt: "Ritz-Carlton" },
+  { type: "img", src: "/images/logos/hilton.png", alt: "Hilton" },
+  { type: "img", src: "/images/logos/sortis.png", alt: "Sortis" },
+  { type: "img", src: "/images/logos/westin.png", alt: "Westin" },
+  { type: "img", src: "/images/logos/w-hotels.png", alt: "W Hotels" },
+  { type: "img", src: "/images/logos/yoopanama.png", alt: "Yoo Panamá" },
+  { type: "img", src: "/images/logos/courtyard.png", alt: "Courtyard" },
+  { type: "img", src: "/images/logos/melia.png", alt: "Melia" },
+  { type: "img", src: "/images/logos/sheraton.png", alt: "Sheraton" },
+  { type: "img", src: "/images/logos/hyatt.png", alt: "Hyatt" },
+  {
+    type: "img",
+    src: "/images/logos/waldorf-astoria.png",
+    alt: "Waldorf Astoria",
+  },
 ];
 const allLogos = [...logos, ...logos];
 
@@ -92,7 +124,7 @@ const valores = [
       </svg>
     ),
     titulo: "Diseño",
-    desc: "Soluciones estéticas y funcionales adaptadas a cada proyecto hotelero de alto nivel.",
+    desc: "Creamos soluciones estéticas y funcionales adaptadas a cada proyecto hotelero de alto nivel, integrando iluminación, arquitectura y experiencia en un mismo concepto. En Lighting & design studio entendemos que cada hotel posee una identidad única, por lo que desarrollamos propuestas personalizadas que elevan la atmósfera de lobbies, habitaciones, restaurantes, áreas comunes y exteriores.\n\nNuestro enfoque combina diseño contemporáneo, eficiencia técnica y control lumínico estratégico para potenciar la arquitectura, resaltar materiales y generar experiencias memorables. Trabajamos junto a arquitectos, interioristas y desarrolladores para garantizar coherencia visual, cumplimiento normativo y alto desempeño.",
   },
   {
     icon: (
@@ -111,7 +143,7 @@ const valores = [
       </svg>
     ),
     titulo: "Suministro y manufactura de luminarias decorativas",
-    desc: "Fabricación a medida con materiales premium, desde el concepto hasta la entrega.",
+    desc: "Ofrecemos soluciones integrales en suministro y fabricación de luminarias decorativas para proyectos hoteleros de alto nivel, garantizando calidad, precisión y coherencia con la identidad arquitectónica de cada espacio.\n\nDesarrollamos piezas a medida que integran diseño, ingeniería y acabados de lujo, utilizando materiales premium y tecnología LED de alto desempeño para asegurar durabilidad, eficiencia y una experiencia visual sofisticada. Acompañamos cada etapa del proceso —desde el concepto y la ingeniería hasta la producción y entrega final— para crear luminarias que no solo iluminen, sino que realcen la experiencia del huésped y el carácter distintivo del proyecto.",
   },
   {
     icon: (
@@ -129,25 +161,10 @@ const valores = [
         <path d="M3 9h18M9 21V9" />
       </svg>
     ),
-    titulo: "Arquitectónicas para proyectos hoteleros high end",
-    desc: "Integración luminotécnica que eleva la experiencia del huésped y define la identidad del espacio.",
+    titulo: "Soluciones arquitectónicas para proyectos hoteleros high end",
+    desc: "Desarrollamos soluciones luminotécnicas arquitectónicas para hoteles de alta gama, donde la iluminación se convierte en un elemento clave que define la identidad y la experiencia del espacio.\n\nIntegramos estratégicamente iluminación técnica y decorativa para resaltar volúmenes, materiales y recorridos, creando atmósferas memorables en cada área del proyecto. Trabajamos en conjunto con arquitectos, diseñadores e ingenieros para garantizar una integración precisa y coherente con el concepto general, logrando espacios que combinan diseño, eficiencia energética, confort visual y tecnología avanzada, elevando la percepción de lujo y el valor de la marca.",
   },
 ];
-
-const PlaceholderIcon = () => (
-  <svg
-    width="34"
-    height="34"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="#ccc"
-    strokeWidth="1.5"
-  >
-    <rect x="3" y="3" width="18" height="18" rx="2" />
-    <circle cx="8.5" cy="8.5" r="1.5" />
-    <path d="m21 15-5-5L5 21" />
-  </svg>
-);
 
 export default function Proyectos() {
   return (
@@ -177,7 +194,18 @@ export default function Proyectos() {
             <div key={i} className="valor-bloque">
               <div className="valor-icon">{v.icon}</div>
               <h3 className="valor-titulo">{v.titulo}</h3>
-              <p className="valor-desc">{v.desc}</p>
+              {v.desc.split("\n\n").map((parrafo, pi) => (
+                <p
+                  key={pi}
+                  className="valor-desc"
+                  style={{
+                    marginBottom:
+                      pi < v.desc.split("\n\n").length - 1 ? "14px" : "0",
+                  }}
+                >
+                  {parrafo}
+                </p>
+              ))}
             </div>
           ))}
         </div>
@@ -190,24 +218,27 @@ export default function Proyectos() {
           <div className="section-header-line" />
         </div>
         <div className="projects-grid">
-          {projects.map((p) =>
-            p.image ? (
-              <div key={p.id} className="project-card">
-                <img src={p.image} alt={p.name} />
-                <div className="project-card-overlay">
-                  <div className="overlay-text">
-                    <h3>{p.name}</h3>
-                    <p>{p.desc}</p>
+          {projects.map((p) => (
+            <div key={p.id} className="project-item">
+              <div className="project-collage">
+                <div className="project-collage-top">
+                  <img src={p.images[0]} alt={`${p.name} 1`} />
+                </div>
+                <div className="project-collage-bottom">
+                  <div className="project-collage-small">
+                    <img src={p.images[1]} alt={`${p.name} 2`} />
+                  </div>
+                  <div className="project-collage-small">
+                    <img src={p.images[2]} alt={`${p.name} 3`} />
                   </div>
                 </div>
               </div>
-            ) : (
-              <div key={p.id} className="project-card project-card-placeholder">
-                <PlaceholderIcon />
-                <span>Imagen del proyecto</span>
+              <div className="project-info">
+                <h3 className="project-name">{p.name}</h3>
+                <p className="project-desc">{p.desc}</p>
               </div>
-            ),
-          )}
+            </div>
+          ))}
         </div>
       </section>
 
