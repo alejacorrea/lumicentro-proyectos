@@ -93,22 +93,26 @@ export default function ProyectosInsignia() {
 
       {/* DETALLE */}
       <section className="insignia-section">
-        <div className="insignia-body">
-          {/* Texto */}
-          <div className="insignia-text">
-            <h2>{active.nombre}</h2>
-            <p className="insignia-cat">{active.categoria}</p>
-            <p className="insignia-desc">{active.descripcion}</p>
-          </div>
+        {/* Texto arriba */}
+        <div className="insignia-text">
+          <h2>{active.nombre}</h2>
+          <p className="insignia-cat">{active.categoria}</p>
+          <p className="insignia-desc">{active.descripcion}</p>
+        </div>
 
-          {/* Galería: 1 grande + 2 pequeñas */}
-          <div className="insignia-galeria">
-            <div className="insignia-img-grande" onClick={() => setLightbox(0)}>
-              <img src={active.galeria[0]} alt={`${active.nombre} 1`} />
+        {/* 3 imágenes en fila */}
+        <div className="insignia-galeria">
+          {active.galeria.map((img, idx) => (
+            <div
+              key={idx}
+              className="insignia-img-item"
+              onClick={() => setLightbox(idx)}
+            >
+              <img src={img} alt={`${active.nombre} ${idx + 1}`} />
               <div className="insignia-img-hover">
                 <svg
-                  width="22"
-                  height="22"
+                  width="20"
+                  height="20"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="white"
@@ -118,33 +122,7 @@ export default function ProyectosInsignia() {
                 </svg>
               </div>
             </div>
-            <div className="insignia-imgs-small">
-              {[1, 2].map((idx) => (
-                <div
-                  key={idx}
-                  className="insignia-img-small"
-                  onClick={() => setLightbox(idx)}
-                >
-                  <img
-                    src={active.galeria[idx]}
-                    alt={`${active.nombre} ${idx + 1}`}
-                  />
-                  <div className="insignia-img-hover">
-                    <svg
-                      width="18"
-                      height="18"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="white"
-                      strokeWidth="2"
-                    >
-                      <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
-                    </svg>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
+          ))}
         </div>
       </section>
 
