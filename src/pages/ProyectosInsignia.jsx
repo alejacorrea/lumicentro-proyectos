@@ -1,58 +1,61 @@
-import { useState } from 'react'
-import Topbar from '../components/Topbar.jsx'
-import Nav from '../components/Nav.jsx'
-import Footer from '../components/Footer.jsx'
+import { useState } from "react";
+import Topbar from "../components/Topbar.jsx";
+import Nav from "../components/Nav.jsx";
+import Footer from "../components/Footer.jsx";
 
 const insigniaProjects = [
   {
     id: 1,
-    numero: '01',
-    nombre: 'Metro de la ciudad de Panamá, línea 2',
-    descripcion: 'Diseño de iluminación, fabricación y suministro de accesorios para toda la protección.',
-    status: 'Completado',
-    heroImg: '/images/insignia/mp-hero.png',
+    numero: "01",
+    nombre: "Metro de la ciudad de Panamá, línea 2",
+    descripcion:
+      "Diseño de iluminación, fabricación y suministro de accesorios para toda la protección.",
+    status: "Completado",
+    heroImg: "/images/insignia/mp-hero.png",
     galeria: [
-      '/images/insignia/mp-1.png',
-      '/images/insignia/mp-2.png',
-      '/images/insignia/mp-3.png',
+      "/images/insignia/mp-1.png",
+      "/images/insignia/mp-2.png",
+      "/images/insignia/mp-3.png",
     ],
   },
   {
     id: 2,
-    numero: '02',
-    nombre: 'Aeropuerto Internacional de Tocumen, terminal 2',
-    descripcion: 'Diseño de iluminación y suministro de accesorios para todo el proyecto.',
-    status: 'Completado',
-    heroImg: '/images/insignia/ap-hero.png',
+    numero: "02",
+    nombre: "Aeropuerto Internacional de Tocumen, terminal 2",
+    descripcion:
+      "Diseño de iluminación y suministro de accesorios para todo el proyecto.",
+    status: "Completado",
+    heroImg: "/images/insignia/ap-hero.png",
     galeria: [
-      '/images/insignia/ap-1.png',
-      '/images/insignia/ap-2.png',
-      '/images/insignia/ap-3.png',
+      "/images/insignia/ap-1.png",
+      "/images/insignia/ap-2.png",
+      "/images/insignia/ap-3.png",
     ],
   },
   {
     id: 3,
-    numero: '03',
-    nombre: 'Biomuseo Panamá',
-    descripcion: 'Diseño de iluminación y suministro de accesorios para todo el proyecto.',
-    status: 'Completado',
-    heroImg: '/images/insignia/pm-hero.png',
+    numero: "03",
+    nombre: "Biomuseo Panamá",
+    descripcion:
+      "Diseño de iluminación y suministro de accesorios para todo el proyecto.",
+    status: "Completado",
+    heroImg: "/images/insignia/pm-hero.png",
     galeria: [
-      '/images/insignia/pm-1.png',
-      '/images/insignia/pm-2.png',
-      '/images/insignia/pm-3.png',
+      "/images/insignia/pm-1.png",
+      "/images/insignia/pm-2.png",
+      "/images/insignia/pm-3.png",
     ],
   },
-]
+];
 
 export default function ProyectosInsignia() {
-  const [active, setActive] = useState(insigniaProjects[0])
-  const [lightbox, setLightbox] = useState(null)
+  const [active, setActive] = useState(insigniaProjects[0]);
+  const [lightbox, setLightbox] = useState(null);
 
   const handleSelect = (project) => {
-    setActive(project)
-    window.scrollTo({ top: 0, behavior: 'smooth' })
-  }
+    setActive(project);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 
   return (
     <>
@@ -78,7 +81,7 @@ export default function ProyectosInsignia() {
           {insigniaProjects.map((p) => (
             <button
               key={p.id}
-              className={`insignia-hero-tab ${active.id === p.id ? 'active' : ''}`}
+              className={`insignia-hero-tab ${active.id === p.id ? "active" : ""}`}
               onClick={() => handleSelect(p)}
             >
               <span className="insignia-hero-tab-num">{p.numero}</span>
@@ -91,7 +94,6 @@ export default function ProyectosInsignia() {
       {/* DETALLE */}
       <section className="insignia-section">
         <div className="insignia-body">
-
           {/* Texto */}
           <div className="insignia-text">
             <h2>{active.nombre}</h2>
@@ -104,25 +106,45 @@ export default function ProyectosInsignia() {
             <div className="insignia-img-grande" onClick={() => setLightbox(0)}>
               <img src={active.galeria[0]} alt={`${active.nombre} 1`} />
               <div className="insignia-img-hover">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2">
-                  <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/>
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="white"
+                  strokeWidth="2"
+                >
+                  <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
                 </svg>
               </div>
             </div>
             <div className="insignia-imgs-small">
               {[1, 2].map((idx) => (
-                <div key={idx} className="insignia-img-small" onClick={() => setLightbox(idx)}>
-                  <img src={active.galeria[idx]} alt={`${active.nombre} ${idx + 1}`} />
+                <div
+                  key={idx}
+                  className="insignia-img-small"
+                  onClick={() => setLightbox(idx)}
+                >
+                  <img
+                    src={active.galeria[idx]}
+                    alt={`${active.nombre} ${idx + 1}`}
+                  />
                   <div className="insignia-img-hover">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2">
-                      <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/>
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="white"
+                      strokeWidth="2"
+                    >
+                      <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
                     </svg>
                   </div>
                 </div>
               ))}
             </div>
           </div>
-
         </div>
       </section>
 
@@ -130,8 +152,15 @@ export default function ProyectosInsignia() {
       {lightbox !== null && (
         <div className="lightbox" onClick={() => setLightbox(null)}>
           <button className="lightbox-close" onClick={() => setLightbox(null)}>
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2">
-              <path d="M18 6L6 18M6 6l12 12"/>
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="white"
+              strokeWidth="2"
+            >
+              <path d="M18 6L6 18M6 6l12 12" />
             </svg>
           </button>
           <img
@@ -141,22 +170,93 @@ export default function ProyectosInsignia() {
           />
           <button
             className="lightbox-arrow lightbox-prev"
-            onClick={(e) => { e.stopPropagation(); setLightbox((lightbox + 2) % 3) }}
+            onClick={(e) => {
+              e.stopPropagation();
+              setLightbox((lightbox + 2) % 3);
+            }}
           >
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round">
-              <path d="M15 18l-6-6 6-6"/>
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="white"
+              strokeWidth="2.5"
+              strokeLinecap="round"
+            >
+              <path d="M15 18l-6-6 6-6" />
             </svg>
           </button>
           <button
             className="lightbox-arrow lightbox-next"
-            onClick={(e) => { e.stopPropagation(); setLightbox((lightbox + 1) % 3) }}
+            onClick={(e) => {
+              e.stopPropagation();
+              setLightbox((lightbox + 1) % 3);
+            }}
           >
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round">
-              <path d="M9 18l6-6-6-6"/>
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="white"
+              strokeWidth="2.5"
+              strokeLinecap="round"
+            >
+              <path d="M9 18l6-6-6-6" />
             </svg>
           </button>
         </div>
       )}
+
+      {/* EXPERTISE */}
+      <section className="expertise-section">
+        <div className="expertise-inner">
+          {/* Bloque 1 — Logística */}
+          <div className="expertise-bloque">
+            <p className="expertise-tag">Logística</p>
+            <p className="expertise-texto">
+              Logística completa (C&F) desde fábrica o desde la Zona Libre de
+              Colón en Panamá. Suministro de prototipos sin costo.
+            </p>
+          </div>
+
+          <div className="expertise-divider" />
+
+          {/* Bloque 2 — Our Expertise */}
+          <div className="expertise-bloque expertise-bloque--wide">
+            <h2 className="expertise-titulo">Nuestra Experiencia</h2>
+            <p className="expertise-intro">
+              Nos especializamos en proyectos hoteleros, comerciales y
+              residenciales. Con 14 puntos de venta en Panamá y una sucursal
+              internacional, somos el mayor proveedor de iluminación de la
+              región.
+            </p>
+            <ul className="expertise-lista">
+              <li>
+                <strong>Diseño personalizado</strong> — Adaptamos formas,
+                materiales y acabados para que se integren perfectamente con el
+                concepto arquitectónico de su hotel.
+              </li>
+              <li>
+                <strong>Producción flexible</strong> — Ya sea una pieza única o
+                manufactura en volumen, nos adaptamos a la escala de su
+                proyecto.
+              </li>
+              <li>
+                <strong>Soporte técnico</strong> — Nuestro equipo trabaja de
+                cerca con arquitectos y diseñadores de interiores para
+                garantizar estética y funcionalidad.
+              </li>
+              <li>
+                <strong>Colaboración creativa</strong> — Trabajamos de la mano
+                con arquitectos, diseñadores y operadores hoteleros para dar
+                vida a visiones únicas.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
       {/* CTA */}
       <section className="cta-section" id="contacto">
@@ -165,11 +265,23 @@ export default function ProyectosInsignia() {
             <h2>Hagamos realidad su visión de hospitalidad</h2>
             <div className="section-header-line" />
           </div>
-          <p>Conéctese con nuestro equipo para discutir cronogramas, presupuestos y objetivos del proyecto.</p>
+          <p>
+            Conéctese con nuestro equipo para discutir cronogramas, presupuestos
+            y objetivos del proyecto.
+          </p>
           <a href="mailto:hola@lumicentro.com.pa" className="cta-btn">
             Iniciar conversación
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M5 12h14M12 5l7 7-7 7"/>
+            <svg
+              width="15"
+              height="15"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="M5 12h14M12 5l7 7-7 7" />
             </svg>
           </a>
         </div>
@@ -177,5 +289,5 @@ export default function ProyectosInsignia() {
 
       <Footer />
     </>
-  )
+  );
 }
