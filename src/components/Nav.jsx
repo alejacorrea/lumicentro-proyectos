@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom'
 
 const NavLogo = () => (
   <Link to="/" className="nav-logo">
-    <img src="/images/logo.png" alt="Lumicentro" style={{ height: '32px', width: 'auto' }} />
+    <img src="/images/logo-lumicentro.png" alt="Lumicentro" style={{ height: '80px', width: 'auto' }} />
   </Link>
 )
 
