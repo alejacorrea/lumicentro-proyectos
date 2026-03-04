@@ -70,8 +70,6 @@ const projects = [
     desc: "Es una reconocida marca internacional de hoteles y resorts de lujo, distinguida por su servicio exclusivo, elegancia y experiencias premium en destinos de alto nivel alrededor del mundo.",
     images: [
       "/images/proyectos/ritz-1.jpg",
-      "/images/proyectos/ritz-2.jpg",
-      "/images/proyectos/ritz-3.jpg",
     ],
   },
 ];
@@ -221,17 +219,19 @@ export default function Proyectos() {
           {projects.map((p) => (
             <div key={p.id} className="project-item">
               <div className="project-collage">
-                <div className="project-collage-top">
+                <div className={p.images[1] ? "project-collage-top" : "project-collage-full"}>
                   <img src={p.images[0]} alt={`${p.name} 1`} />
                 </div>
-                <div className="project-collage-bottom">
-                  <div className="project-collage-small">
-                    <img src={p.images[1]} alt={`${p.name} 2`} />
+                {p.images[1] && (
+                  <div className="project-collage-bottom">
+                    <div className="project-collage-small">
+                      <img src={p.images[1]} alt={`${p.name} 2`} />
+                    </div>
+                    <div className="project-collage-small">
+                      <img src={p.images[2]} alt={`${p.name} 3`} />
+                    </div>
                   </div>
-                  <div className="project-collage-small">
-                    <img src={p.images[2]} alt={`${p.name} 3`} />
-                  </div>
-                </div>
+                )}
               </div>
               <div className="project-info">
                 <h3 className="project-name">{p.name}</h3>
