@@ -59,9 +59,9 @@ const projects = [
     name: "Hotel W Panamá",
     desc: "El W Panama es un hotel urbano de lujo en el distrito financiero de Ciudad de Panamá, reconocido por su diseño moderno y estilo vibrante.",
     images: [
-      "/images/proyectos/w-hotels-1.jpg",
-      "/images/proyectos/w-hotels-2.jpg",
-      "/images/proyectos/w-hotels-3.jpg",
+      "/images/proyectos/w-hotels-1.jpeg",
+      "/images/proyectos/w-hotels-2.jpeg",
+      "/images/proyectos/w-hotels-3.jpeg",
     ],
   },
   {
