@@ -304,13 +304,13 @@ footer { background: var(--dark); padding: 36px 60px; display: flex; align-items
 .insignia-hero-bg {
   position: absolute; inset: 0;
   background-size: cover; background-position: center;
-  filter: brightness(0.35);
+  filter: brightness(0.70);
   transition: background-image 0.6s ease;
   animation: kenBurnsActive 8s ease-out forwards;
 }
 .insignia-hero-overlay {
   position: absolute; inset: 0;
-  background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.1) 60%);
+  background: linear-gradient(to top, rgba(0,0,0,0.72) 0%, rgba(0,0,0,0.05) 60%);
 }
 .insignia-hero-content {
   position: relative; z-index: 2;

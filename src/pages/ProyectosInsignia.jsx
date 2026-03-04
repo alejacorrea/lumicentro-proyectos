@@ -212,24 +212,13 @@ export default function ProyectosInsignia() {
             </p>
             <ul className="expertise-lista">
               <li>
-                <strong>Diseño personalizado</strong> — Adaptamos formas,
-                materiales y acabados para que se integren perfectamente con el
-                concepto arquitectónico de su hotel.
+                <strong>Diseño personalizado</strong> — Desarrollamos soluciones completamente a medida, adaptando formas, materiales, proporciones y acabados para que cada pieza se integre de manera armónica con el concepto arquitectónico y la identidad del hotel. Entendemos que cada proyecto tiene un carácter único, por eso traducimos la visión creativa en luminarias y soluciones técnicas que refuerzan la narrativa del espacio y elevan la experiencia del huésped.
               </li>
               <li>
-                <strong>Producción flexible</strong> — Ya sea una pieza única o
-                manufactura en volumen, nos adaptamos a la escala de su
-                proyecto.
+                <strong>Producción flexible</strong> — Nuestra capacidad de producción se ajusta a la escala y complejidad de cada proyecto. Desde piezas únicas de alto impacto hasta manufactura en volumen para cadenas hoteleras o desarrollos de gran magnitud, garantizamos consistencia, calidad y cumplimiento en cada etapa. Mantenemos estándares rigurosos de control y precisión, asegurando uniformidad estética y desempeño técnico en cada entrega.
               </li>
               <li>
-                <strong>Soporte técnico</strong> — Nuestro equipo trabaja de
-                cerca con arquitectos y diseñadores de interiores para
-                garantizar estética y funcionalidad.
-              </li>
-              <li>
-                <strong>Colaboración creativa</strong> — Trabajamos de la mano
-                con arquitectos, diseñadores y operadores hoteleros para dar
-                vida a visiones únicas.
+                <strong>Soporte técnico</strong> — Brindamos acompañamiento especializado durante todo el proceso. Nuestro equipo técnico colabora estrechamente con arquitectos, diseñadores de interiores
               </li>
             </ul>
           </div>
