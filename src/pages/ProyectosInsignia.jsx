@@ -11,11 +11,11 @@ const insigniaProjects = [
     descripcion:
       "Diseño de iluminación, fabricación y suministro de accesorios para toda la protección.",
     status: "Completado",
-    heroImg: "/images/insignia/mp-hero.png",
+    heroImg: "/images/insignia/mp-hero.jpeg",
     galeria: [
-      "/images/insignia/mp-1.png",
-      "/images/insignia/mp-2.png",
-      "/images/insignia/mp-3.png",
+      "/images/insignia/mp-1.jpeg",
+      "/images/insignia/mp-2.jpeg",
+      "/images/insignia/mp-3.jpeg",
     ],
   },
   {
@@ -36,6 +36,7 @@ const insigniaProjects = [
     id: 3,
     numero: "03",
     nombre: "Biomuseo Panamá",
+    categoria: "Obra por Frank Gehry",
     descripcion:
       "Diseño de iluminación y suministro de accesorios para todo el proyecto.",
     status: "Completado",
@@ -72,7 +73,6 @@ export default function ProyectosInsignia() {
         <div className="insignia-hero-content">
           <h1>{active.nombre}</h1>
           <p className="insignia-categoria">{active.categoria}</p>
-          <span className="insignia-status-badge">{active.status}</span>
         </div>
         <div className="insignia-numero">{active.numero}</div>
 

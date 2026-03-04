@@ -41,7 +41,7 @@ const projects = [
     images: [
       "/images/proyectos/yoo-1.jpeg",
       "/images/proyectos/yoo-2.jpeg",
-      "/images/proyectos/yoo-3.jpeg",
+      "/images/proyectos/yoo-3.jpg",
     ],
   },
   {
