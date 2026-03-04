@@ -40,7 +40,7 @@ const insigniaProjects = [
     descripcion:
       "Diseño de iluminación y suministro de accesorios para todo el proyecto.",
     status: "Completado",
-    heroImg: "/images/insignia/pm-hero.png",
+    heroImg: "/images/insignia/pm-hero.jpeg",
     galeria: [
       "/images/insignia/pm-1.png",
       "/images/insignia/pm-2.png",
