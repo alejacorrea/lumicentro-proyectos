@@ -178,7 +178,7 @@ export default function Proyectos() {
             ejecutados con precisión
           </>
         }
-        subtitle="En LUMICENTRO LIGHTING & DESIGN STUDIO desarrollamos soluciones integrales para el sector hospitalidad, desde la fabricación a medida hasta la instalación final. Cada proyecto refleja planificación estratégica, eficiencia operativa y una ejecución impecable."
+        subtitle="En Lumicentro lighting & design studio desarrollamos soluciones integrales para el sector hospitalidad, desde la fabricación a medida hasta la instalación final. Cada proyecto refleja planificación estratégica, eficiencia operativa y una ejecución impecable."
       />
 
       {/* VALORES AGREGADOS */}
