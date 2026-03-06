@@ -205,10 +205,7 @@ export default function ProyectosInsignia() {
           <div className="expertise-bloque expertise-bloque--wide">
             <h2 className="expertise-titulo">Nuestra Experiencia</h2>
             <p className="expertise-intro">
-              Nos especializamos en proyectos hoteleros, comerciales y
-              residenciales. Con 14 puntos de venta en Panamá y una sucursal
-              internacional, somos el mayor proveedor de iluminación de la
-              región.
+              Nos especializamos en proyectos hoteleros, comerciales y residenciales, somos el mayor proveedor de iluminación de la región.
             </p>
             <ul className="expertise-lista">
               <li>
