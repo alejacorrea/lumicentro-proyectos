@@ -118,7 +118,7 @@ const valores = [
       </svg>
     ),
     titulo: "Diseño",
-    desc: "En Lumicentro Lighting & Design Studio desarrollamos soluciones integrales de iluminación para el sector hospitalidad, creando espacios estéticos y funcionales adaptados a la identidad de cada hotel. Nuestro enfoque combina diseño contemporáneo, eficiencia técnica y control lumínico estratégico para resaltar la arquitectura y generar experiencias memorables. Ofrecemos un servicio completo que va desde la fabricación a medida hasta la instalación final, garantizando planificación, eficiencia y una ejecución impecable.",
+    desc: "En Lumicentro Lighting & Design Studio desarrollamos soluciones integrales de iluminación para el sector hospitalidad, creando espacios estéticos y funcionales adaptados a la identidad de cada hotel. Ofrecemos un servicio completo que va desde la fabricación a medida hasta la instalación final, garantizando planificación, eficiencia y una ejecución impecable.",
   },
   {
     icon: (
