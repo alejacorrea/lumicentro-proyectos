@@ -15,7 +15,7 @@ export default function Footer() {
         </div>
       </footer>
       <div className="footer-bottom">
-        <p>© 2026 Lumicentro Proyecto — Todos los derechos reservados</p>
+        <p>© 2026 Lumicentro Lighting & Design Studio — Todos los derechos reservados</p>
       </div>
     </>
   )
