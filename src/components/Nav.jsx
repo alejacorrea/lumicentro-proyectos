@@ -33,6 +33,15 @@ export default function Nav() {
         <li><a href="#" onClick={close}>Servicios</a></li>
         <li>
           <Link
+            to="/marcas"
+            className={location.pathname === '/marcas' ? 'active' : ''}
+            onClick={close}
+          >
+            Marcas
+          </Link>
+        </li>
+        <li>
+          <Link
             to="/"
             className={location.pathname === '/' ? 'active' : ''}
             onClick={close}
