@@ -421,6 +421,7 @@ footer { background: var(--dark); padding: 36px 60px; display: flex; align-items
 @media (max-width: 1024px) {
   .topbar, .projects-section, .clients-section,
   .cta-section, .valores-section, .expertise-section,
+  .proyectos-intro-section,
   footer, .footer-bottom {
     padding-left: 32px;
     padding-right: 32px;
@@ -468,6 +469,8 @@ footer { background: var(--dark); padding: 36px 60px; display: flex; align-items
 
   /* Valores */
   .valores-section { padding: 48px 16px; }
+  .proyectos-intro-section { padding: 48px 16px 40px; }
+  .proyectos-intro-text { font-size: 15px; text-align: left; margin: 16px 0 0; }
   .valores-grid { grid-template-columns: 1fr; gap: 0; }
   .valor-bloque { padding: 24px 0; border-right: none; border-bottom: 1px solid var(--border); }
   .valor-bloque:last-child { border-bottom: none; }
