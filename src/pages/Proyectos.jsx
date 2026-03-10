@@ -26,7 +26,7 @@ const projects = [
   },
   {
     id: 3,
-    name: "Sortis Panamá",
+    name: "Sortis Hotel, Spa & Casino by Marriott",
     desc: "El Sortis Hotel, Spa & Casino es un hotel urbano de lujo ubicado en Obarrio, Ciudad de Panamá. Reconocido por su diseño moderno, spa, casino y vibrante oferta gastronómica, es un referente de hospitalidad contemporánea en la capital.",
     images: [
       "/images/proyectos/sortis-1.jpeg",
@@ -84,22 +84,18 @@ const clients = [
 ];
 
 const logos = [
-  { type: "img", src: "/images/logos/jw-marriott.png", alt: "JW Marriott" },
-  { type: "img", src: "/images/logos/ritz-carlton.png", alt: "Ritz-Carlton" },
-  { type: "img", src: "/images/logos/hilton.png", alt: "Hilton" },
-  { type: "img", src: "/images/logos/sortis.png", alt: "Sortis" },
-  { type: "img", src: "/images/logos/westin.png", alt: "Westin" },
-  { type: "img", src: "/images/logos/w-hotels.png", alt: "W Hotels" },
-  { type: "img", src: "/images/logos/yoopanama.png", alt: "Yoo Panamá" },
-  { type: "img", src: "/images/logos/courtyard.png", alt: "Courtyard" },
-  { type: "img", src: "/images/logos/melia.png", alt: "Melia" },
-  { type: "img", src: "/images/logos/sheraton.png", alt: "Sheraton" },
-  { type: "img", src: "/images/logos/hyatt.png", alt: "Hyatt" },
-  {
-    type: "img",
-    src: "/images/logos/waldorf-astoria.png",
-    alt: "Waldorf Astoria",
-  },
+  { type: "img", src: "/images/logos/jw-marriott.png",    alt: "JW Marriott",     projectId: 1 },
+  { type: "img", src: "/images/logos/ritz-carlton.png",   alt: "Ritz-Carlton",    projectId: 7 },
+  { type: "img", src: "/images/logos/hilton.png",         alt: "Hilton",          projectId: 2 },
+  { type: "img", src: "/images/logos/sortis.png",         alt: "Sortis",          projectId: 3 },
+  { type: "img", src: "/images/logos/westin.png",         alt: "Westin",          projectId: null },
+  { type: "img", src: "/images/logos/w-hotels.png",       alt: "W Hotels",        projectId: 6 },
+  { type: "img", src: "/images/logos/yoopanama.png",      alt: "Yoo Panamá",      projectId: 4 },
+  { type: "img", src: "/images/logos/courtyard.png",      alt: "Courtyard",       projectId: null },
+  { type: "img", src: "/images/logos/melia.png",          alt: "Melia",           projectId: null },
+  { type: "img", src: "/images/logos/sheraton.png",       alt: "Sheraton",        projectId: null },
+  { type: "img", src: "/images/logos/hyatt.png",          alt: "Hyatt",           projectId: null },
+  { type: "img", src: "/images/logos/waldorf-astoria.png",alt: "Waldorf Astoria", projectId: 5 },
 ];
 const allLogos = [...logos, ...logos];
 
@@ -122,7 +118,7 @@ const valores = [
       </svg>
     ),
     titulo: "Diseño",
-    desc: "Creamos soluciones estéticas y funcionales adaptadas a cada proyecto hotelero de alto nivel, integrando iluminación, arquitectura y experiencia en un mismo concepto. En Lighting & design studio entendemos que cada hotel posee una identidad única, por lo que desarrollamos propuestas personalizadas que elevan la atmósfera de lobbies, habitaciones, restaurantes, áreas comunes y exteriores.\n\nNuestro enfoque combina diseño contemporáneo, eficiencia técnica y control lumínico estratégico para potenciar la arquitectura, resaltar materiales y generar experiencias memorables. Trabajamos junto a arquitectos, interioristas y desarrolladores para garantizar coherencia visual, cumplimiento normativo y alto desempeño.",
+    desc: "En Lumicentro Lighting & Design Studio desarrollamos soluciones integrales de iluminación para el sector hospitalidad, creando espacios estéticos y funcionales adaptados a la identidad de cada hotel. Nuestro enfoque combina diseño contemporáneo, eficiencia técnica y control lumínico estratégico para resaltar la arquitectura y generar experiencias memorables. Ofrecemos un servicio completo que va desde la fabricación a medida hasta la instalación final, garantizando planificación, eficiencia y una ejecución impecable.",
   },
   {
     icon: (
@@ -141,7 +137,7 @@ const valores = [
       </svg>
     ),
     titulo: "Suministro y manufactura de luminarias decorativas",
-    desc: "Ofrecemos soluciones integrales en suministro y fabricación de luminarias decorativas para proyectos hoteleros de alto nivel, garantizando calidad, precisión y coherencia con la identidad arquitectónica de cada espacio.\n\nDesarrollamos piezas a medida que integran diseño, ingeniería y acabados de lujo, utilizando materiales premium y tecnología LED de alto desempeño para asegurar durabilidad, eficiencia y una experiencia visual sofisticada. Acompañamos cada etapa del proceso —desde el concepto y la ingeniería hasta la producción y entrega final— para crear luminarias que no solo iluminen, sino que realcen la experiencia del huésped y el carácter distintivo del proyecto.",
+    desc: "Ofrecemos soluciones integrales en suministro y fabricación de luminarias decorativas para proyectos hoteleros, con piezas a medida que integran diseño, ingeniería y materiales de alta calidad. Acompañamos todo el proceso, desde el concepto hasta la entrega final, creando luminarias que realzan la arquitectura y la experiencia del huésped.",
   },
   {
     icon: (
@@ -160,7 +156,7 @@ const valores = [
       </svg>
     ),
     titulo: "Soluciones arquitectónicas para proyectos hoteleros high end",
-    desc: "Desarrollamos soluciones luminotécnicas arquitectónicas para hoteles de alta gama, donde la iluminación se convierte en un elemento clave que define la identidad y la experiencia del espacio.\n\nIntegramos estratégicamente iluminación técnica y decorativa para resaltar volúmenes, materiales y recorridos, creando atmósferas memorables en cada área del proyecto. Trabajamos en conjunto con arquitectos, diseñadores e ingenieros para garantizar una integración precisa y coherente con el concepto general, logrando espacios que combinan diseño, eficiencia energética, confort visual y tecnología avanzada, elevando la percepción de lujo y el valor de la marca.",
+    desc: "Desarrollamos soluciones luminotécnicas arquitectónicas para hoteles, donde la iluminación define la identidad y la experiencia del espacio. Integramos iluminación técnica y decorativa para resaltar arquitectura, materiales y recorridos, creando ambientes elegantes, eficientes y visualmente confortables en cada proyecto.",
   },
 ];
 
@@ -173,12 +169,10 @@ export default function Proyectos() {
       <HeroSlider
         title={
           <>
-            Proyectos de hospitalidad
-            <br />
-            ejecutados con precisión
+            LUMICENTRO 
           </>
         }
-        subtitle="En Lumicentro Lighting & Design Studio desarrollamos soluciones integrales para el sector hospitalidad, desde la fabricación a medida hasta la instalación final. Cada proyecto refleja planificación estratégica, eficiencia operativa y una ejecución impecable."
+        subtitle="Fundada en 1966, fue establecida con la visión de ofrecer soluciones de iluminación decorativa de clase mundial a la mayor cantidad de hogares posible, mejorando las experiencias de vida a través del diseño, la calidad y la innovación."
       />
 
       {/* VALORES AGREGADOS */}
@@ -209,6 +203,38 @@ export default function Proyectos() {
         </div>
       </section>
 
+      {/* INTRO PROYECTOS */}
+      <section className="proyectos-intro-section">
+        <div className="section-header">
+          <h2>Proyectos de hospitalidad ejecutados con precisión</h2>
+          <div className="section-header-line" />
+        </div>
+        <p className="proyectos-intro-text">
+          En Lumicentro Lighting &amp; Design Studio desarrollamos soluciones integrales para el sector hospitalidad, desde la fabricación a medida hasta la instalación final. Cada proyecto refleja planificación estratégica, eficiencia operativa y una ejecución impecable.
+        </p>
+      </section>
+
+      {/* LOGO CAROUSEL — después de valores */}
+      <section className="logo-carousel-section">
+        <div className="logo-carousel-wrapper">
+          <div className="logo-carousel">
+            {allLogos.map((logo, i) => (
+              <div
+                key={i}
+                className={`logo-item${logo.projectId ? ' logo-item-clickable' : ''}`}
+                onClick={() => {
+                  if (logo.projectId) {
+                    document.getElementById(`project-${logo.projectId}`)?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                  }
+                }}
+              >
+                <img src={logo.src} alt={logo.alt} />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* PROJECTS */}
       <section className="projects-section">
         <div className="section-header">
@@ -217,7 +243,7 @@ export default function Proyectos() {
         </div>
         <div className="projects-grid">
           {projects.map((p) => (
-            <div key={p.id} className="project-item">
+            <div key={p.id} id={`project-${p.id}`} className="project-item">
               <div className="project-collage">
                 <div className={p.images[1] ? "project-collage-top" : "project-collage-full"}>
                   <img src={p.images[0]} alt={`${p.name} 1`} />
@@ -253,19 +279,6 @@ export default function Proyectos() {
             <li key={c}>{c}</li>
           ))}
         </ul>
-        <div className="logo-carousel-wrapper">
-          <div className="logo-carousel">
-            {allLogos.map((logo, i) => (
-              <div key={i} className="logo-item">
-                {logo.type === "img" ? (
-                  <img src={logo.src} alt={logo.alt} />
-                ) : (
-                  <span className="logo-item-text">{logo.label}</span>
-                )}
-              </div>
-            ))}
-          </div>
-        </div>
       </section>
 
       {/* CTA */}
